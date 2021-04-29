@@ -1,4 +1,5 @@
 import React, { useState } from "react"; 
+import WeatherForecast from "./WeatherForecast"
 import "./Weather.css"; 
 
 import Search from "./Search"; 
@@ -10,6 +11,7 @@ export default function Weather(props) {
     function handleResponse(response) {
         setWeatherData({
             ready: true, 
+            coordinates: response.data.coord, 
             date: new Date(response.data.dt * 1000),
             temperature: response.data.main.temp, 
             humidity: response.data.main.humidity, 
@@ -54,6 +56,7 @@ export default function Weather(props) {
         </div>
       </form>
       <Search data={weatherData} />
+      <WeatherForecast coordinates={weatherData.coordinates}/>
         </div>
         );
 } else {

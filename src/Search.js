@@ -19,7 +19,7 @@ return (
          </div>
  <h4 className="text-capitalize">{props.data.description}</h4>
         <div className="float-left">
-          <WeatherIcon code={props.data.icon} className="image"/>
+          <WeatherIcon code={props.data.icon} size={52}/>
           </div>
           <ul>
             <li>
