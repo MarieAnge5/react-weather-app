@@ -8,7 +8,9 @@ export default function App() {
       <div className="container">
       <Weather defaultCity="London"/>
       <footer>
-        This poject was coded by  Marie Ange is <a href="https://github.com/MarieAnge5/react-weather-app">open-sourced on GitHub</a>
+        This poject was coded by  Marie Ange is 
+        <a 
+        href="https://github.com/MarieAnge5/react-weather-app" >open-sourced on GitHub</a>
       </footer>
     </div>
     </div>

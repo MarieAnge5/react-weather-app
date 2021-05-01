@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate"; 
 import WeatherIcon from "./WeatherIcon"; 
 import WeatherTemperature from "./WeatherTemperature"; 
+import "./Weather.css"; 
 
 
 export default function Search(props)  {
@@ -14,12 +15,14 @@ return (
         <h2>{props.data.city}</h2>
         </div>
            <div className="col-6">
+             <h3>
          <WeatherTemperature celsius={props.data.temperature} />
+         </h3>
          </div>
          </div>
  <h4 className="text-capitalize">{props.data.description}</h4>
         <div className="float-left">
-          <WeatherIcon code={props.data.icon} size={52}/>
+          <WeatherIcon code={props.data.icon} size="80"/>
           </div>
           <ul>
             <li>

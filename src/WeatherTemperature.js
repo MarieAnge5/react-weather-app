@@ -16,11 +16,9 @@ if (unit === 'celsius') {
     return (
          <h3 className="WeatherTemperature">
             <span className="temperature">
-                {Math.round(props.celsius)} </span>
-            <span className="unit">
-             °C | {" "}
-              <a href="/" onClick={convertFahrenheit}>
-             °F
+                {Math.round(props.celsius)}</span>
+            <span className="unit">°C |{" "}
+            <a href="/" onClick={convertFahrenheit} className="units">°F
               </a>
             </span>
           </h3>
@@ -33,7 +31,7 @@ if (unit === 'celsius') {
                 {Math.round(fahrenheit)}
             </span>
             <span className="unit">
-                <a href="/" onClick={convertCelsius}>
+                <a href="/" onClick={convertCelsius} className="units">
              °C </a> {""}
               | °F
             </span>

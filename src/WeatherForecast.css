@@ -1,0 +1,20 @@
+.WeatherForecast {
+  padding-top: 60px;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.WeatherForecast-temperature-min {
+  margin-left: 5px;
+}
+.WeatherForecast-temperature-max {
+  font-style: bold;
+}
+.WeatherForecast-temperatures {
+  padding-bottom: 20px;
+  color: white;
+}
+.WeatherForcecast-day {
+  color: rgb(51, 1, 71);
+  padding-bottom: 10px;
+}
