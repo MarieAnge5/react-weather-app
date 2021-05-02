@@ -23,10 +23,10 @@ function day() {
     return (
         <div>
        <div className="WeatherForcecast-day">{day()}</div>
-                <WeatherIcon code={props.data.weather[0].icon} size={80}/>
+                <WeatherIcon code={props.data.weather[0].icon} size={10}/>
 <div className ="WeatherForecast-temperatures">
-<span className="WeatherForecast-temperature-max">{maxTemperature()}</span>| 
-  <span className="WeatherForecast-temperature-min">{minTemperature()}</span>
+<span className="WeatherForecast-temperature-max"><strong>{maxTemperature()}</strong></span>| 
+<span className="WeatherForecast-temperature-min">{minTemperature()}</span>
 </div>
 </div>
     ); 

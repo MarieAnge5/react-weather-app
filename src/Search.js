@@ -11,10 +11,12 @@ return (
     <h1><FormattedDate date={props.data.date}/> </h1>
 <div className="Search">
 <div className="row">
-        <div className="col-6">
+        <div className="col-12">
         <h2>{props.data.city}</h2>
         </div>
-           <div className="col-6">
+        </div>
+        <div className="row">
+           <div className="col-12">
              <h3>
          <WeatherTemperature celsius={props.data.temperature} />
          </h3>
@@ -22,7 +24,7 @@ return (
          </div>
  <h4 className="text-capitalize">{props.data.description}</h4>
         <div className="float-left">
-          <WeatherIcon code={props.data.icon} size="80"/>
+          <WeatherIcon code={props.data.icon}/>
           </div>
           <ul>
             <li>
