@@ -11,7 +11,7 @@ return (
     <h1><FormattedDate date={props.data.date}/> </h1>
 <div className="Search">
 <div className="row">
-        <div className="col-12">
+        <div className="col-11">
         <h2>{props.data.city}</h2>
         </div>
         </div>
